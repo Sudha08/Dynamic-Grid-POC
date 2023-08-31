@@ -1,0 +1,40 @@
+<!-- PURE HTML -->
+<div class="container mt-5">
+    <table class="table table-bordered" *ngIf="data">
+        <tbody>
+            <tr class="table-primary">
+                <td [attr.colspan]="data.columns" class="text-center">Header</td>
+            </tr>
+            <tr *ngFor="let _ of [].constructor(data.rows); let rowIndex = index">
+                <td *ngFor="let _ of [].constructor(data.columns); let colIndex = index">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <ng-container *ngIf="data.fields[rowIndex * data.columns + colIndex] as field">
+                                <label *ngIf="field.type !== 'button'">{{ field.Label }} : &nbsp;</label>
+                                <ng-container [ngSwitch]="field.type">
+                                  <input size="50" *ngSwitchCase="'textbox'" type="text">
+                                  <select *ngSwitchCase="'dropdown'">
+                                      <option value="male">Male</option>
+                                      <option value="female">Female</option>
+                                      <option value="others">Others</option>
+                                  </select>
+                                  <input *ngSwitchCase="'radiobutton'" type="radio">
+                                  <input *ngSwitchCase="'checkbox'" type="checkbox">
+                                  <ng-container *ngSwitchCase="'button'">
+                                    <button class="btn btn-md"
+                                      [ngClass]="{
+                                          'btn-primary': field.Label !== 'Cancel', 
+                                          'btn-secondary': field.Label === 'Cancel'
+                                      }">
+                                      {{ field.Label }}
+                                    </button>
+                                  </ng-container>
+                                </ng-container>
+                              </ng-container>
+                        </div>
+                    </form>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+</div>

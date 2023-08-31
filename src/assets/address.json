@@ -1,0 +1,62 @@
+{
+    "columns": 3,
+    "rows": 5,
+    "fields": [
+      {
+        "Label": "Name",
+        "type": "textbox"
+      },
+      {
+        "Label": "Gender",
+        "type": "dropdown"
+      },
+      {
+        "Label": "XYZ",
+        "type": "radiobutton"
+      },
+      {
+        "Label": "Name1",
+        "type": "textbox"
+      },
+      {
+        "Label": "Gender1",
+        "type": "dropdown"
+      },
+      {
+        "Label": "XYZ2",
+        "type": "radiobutton"
+      },
+      {
+        "Label": "Name2",
+        "type": "textbox"
+      },
+      {
+        "Label": "Gender2",
+        "type": "dropdown"
+      },
+      {
+        "Label": "XYZ4",
+        "type": "radiobutton"
+      },
+      {
+        "Label": "Name3",
+        "type": "textbox"
+      },
+      {
+        "Label": "XYZ3",
+        "type": "dropdown"
+      },
+      {
+        "Label": "XYZ5",
+        "type": "radiobutton"
+      },      
+      {
+        "Label": "Save",
+        "type": "button"
+      },
+      {
+        "Label": "Cancel",
+        "type": "button"
+      }
+    ]
+  }
