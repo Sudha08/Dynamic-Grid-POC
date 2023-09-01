@@ -4,12 +4,50 @@ input, select {
     padding: 5px;
 }
 
-label {
-    text-align: right;
-    width: 100px;
-}
-
 button {
-    float: right;
     width: 135px;
 }
+
+.mr-3 {
+    margin-right: 3px !important;
+}
+
+.btn-150 {
+    width: 150px;
+}
+
+// .form-group {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .form-group label {
+//     flex: 0.5;
+//     margin-right: 5px;
+// }
+
+// .form-group input[type="text"], 
+// .form-group select {
+//     flex: 2;
+// }
+
+// /* New/updated styles for checkbox */
+// .form-group input[type="checkbox"] {
+//     flex: none !important;
+//     margin-left: 10px;
+// }
+
+// .form-group label + input[type="checkbox"] {
+//     margin-right: 0; /* Remove the right margin when the checkbox follows a label */
+// }
+
+// /* Add flex: none to the label immediately before the checkbox */
+// .form-group label + input[type="checkbox"]::before {
+//     content: attr(for);
+//     flex: none;
+// }
+
+// .form-group label + input[type="checkbox"] + label {
+//     display: none; /* Hide the original label */
+// }

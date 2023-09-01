@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
 import { PersonComponent } from './person/person.component';
 import { AddressComponent } from './address/address.component';
+import { RspCompComponent } from './rsp-comp/rsp-comp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DynamicTableComponent,
     PersonComponent,
-    AddressComponent
+    AddressComponent,
+    RspCompComponent
   ],
   imports: [
     BrowserModule,

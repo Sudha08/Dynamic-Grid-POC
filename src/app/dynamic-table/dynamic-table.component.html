@@ -1,5 +1,19 @@
-<!-- PURE HTML -->
 <div class="container mt-5">
+     <!-- Header text for the web page -->
+     <h1 class="text-center mb-4">RETIREMENT SAVINGS PLAN</h1>
+
+     <!-- Section for inline buttons -->
+     <div class="mb-4">
+         <button class="btn btn-primary mr-3">Save</button>
+         <button disabled class="btn btn-primary mr-3">Button 2</button>
+         <button class="btn btn-primary mr-3">Button 3</button>
+         <button disabled class="btn btn-primary mr-3">Button 4</button>
+         <button disabled class="btn btn-primary mr-3">Button 5</button>
+         <button disabled class="btn btn-primary mr-3">Button 6</button>
+         <button disabled class="btn btn-primary mr-3">Button 7</button>
+         <button class="btn btn-primary">Button 8</button>
+     </div>
+     <!-- Dynamic table with the form controls-->
     <table class="table table-bordered" *ngIf="data">
         <tbody>
             <tr class="table-primary">
@@ -10,12 +24,12 @@
                     <form class="form-inline">
                         <div class="form-group">
                             <ng-container *ngIf="data.fields[rowIndex * data.columns + colIndex] as field">
-                                <label *ngIf="field.type !== 'button'">{{ field.Label }} : &nbsp;</label>
+                                <label *ngIf="field.type !== 'button'">{{ field.Label }} : 
+                                &nbsp;</label>
                                 <ng-container [ngSwitch]="field.type">
-                                  <input size="50" *ngSwitchCase="'textbox'" type="text">
+                                  <input *ngSwitchCase="'textbox'" type="text">
                                   <select *ngSwitchCase="'dropdown'">
-                                      <option value="male">Male</option>
-                                      <option value="female">Female</option>
+                                      <option value="0">{{field.Label}}</option>
                                       <option value="others">Others</option>
                                   </select>
                                   <input *ngSwitchCase="'radiobutton'" type="radio">

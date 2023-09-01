@@ -1,6 +1,6 @@
 {
     "columns": 4,
-    "rows": 4,
+    "rows": 3,
     "fields": [
       {
         "Label": "Name",
@@ -49,14 +49,6 @@
       {
         "Label": "XYZ5",
         "type": "checkbox"
-      },
-      {
-        "Label": "Save",
-        "type": "button"
-      },
-      {
-        "Label": "Cancel",
-        "type": "button"
       }
     ]
   }
