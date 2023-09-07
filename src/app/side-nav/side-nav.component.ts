@@ -13,9 +13,14 @@ export class SideNavComponent {
   menuSidebar = [
     {
       link_name: "Scheme 1",
-      link: "/plan1",
+      link: null,
       icon: "bi bi-archive icon",
-      sub_menu: []
+      sub_menu: [
+        {
+          link_name: "Plan 1",
+          link: "/plan1",
+        }
+      ]
     }, {
       link_name: "Scheme 2",
       link: null,
