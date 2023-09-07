@@ -1,23 +1,20 @@
-<div class="container mt-5">
-     <!-- Header text for the web page -->
-     <h1 class="text-center mb-4">RETIREMENT SAVINGS PLAN</h1>
-
-     <!-- Section for inline buttons -->
-     <div class="mb-4">
-         <button class="btn btn-primary mr-3">Save</button>
-         <button disabled class="btn btn-primary mr-3">Button 2</button>
-         <button class="btn btn-primary mr-3">Button 3</button>
-         <button disabled class="btn btn-primary mr-3">Button 4</button>
-         <button disabled class="btn btn-primary mr-3">Button 5</button>
-         <button disabled class="btn btn-primary mr-3">Button 6</button>
-         <button disabled class="btn btn-primary mr-3">Button 7</button>
-         <button class="btn btn-primary">Button 8</button>
-     </div>
-     <!-- Dynamic table with the form controls-->
+<div>
+    <!-- Section for inline buttons -->
+    <div class="m-2">
+        <button class="btn btn-primary blue-bg m-2 blue-bg">Save</button>
+        <button disabled class="btn btn-secondary m-2">Button 2</button>
+        <button class="btn btn-primary m-2 blue-bg">Button 3</button>
+        <button disabled class="btn btn-secondary m-2">Button 4</button>
+        <button disabled class="btn btn-secondary m-2">Button 5</button>
+        <button class="btn btn-primary m-2 blue-bg">Button 6</button>
+        <button disabled class="btn btn-secondary m-2">Button 7</button>
+        <button class="btn btn-primary m-2 blue-bg">Button 8</button>
+    </div>
+    <!-- Dynamic table with the form controls-->
     <table class="table table-bordered" *ngIf="data">
         <tbody>
             <tr class="table-primary">
-                <td [attr.colspan]="data.columns" class="text-center">Header</td>
+                <td [attr.colspan]="data.columns" class="text-center">{{data.title}}</td>
             </tr>
             <tr *ngFor="let _ of [].constructor(data.rows); let rowIndex = index">
                 <td *ngFor="let _ of [].constructor(data.columns); let colIndex = index">
@@ -27,28 +24,29 @@
                                 <label *ngIf="field.type !== 'button'">{{ field.Label }} : 
                                 &nbsp;</label>
                                 <ng-container [ngSwitch]="field.type">
-                                  <input *ngSwitchCase="'textbox'" type="text">
-                                  <select *ngSwitchCase="'dropdown'">
-                                      <option value="0">{{field.Label}}</option>
-                                      <option value="others">Others</option>
-                                  </select>
-                                  <input *ngSwitchCase="'radiobutton'" type="radio">
-                                  <input *ngSwitchCase="'checkbox'" type="checkbox">
-                                  <ng-container *ngSwitchCase="'button'">
+                                    <input *ngSwitchCase="'textbox'" type="text">
+                                    <select *ngSwitchCase="'dropdown'">
+                                        <option value="0">{{field.Label}}</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                    <input *ngSwitchCase="'radiobutton'" type="radio">
+                                    <input *ngSwitchCase="'checkbox'" type="checkbox">
+                                    <ng-container *ngSwitchCase="'button'">
                                     <button class="btn btn-md"
-                                      [ngClass]="{
-                                          'btn-primary': field.Label !== 'Cancel', 
-                                          'btn-secondary': field.Label === 'Cancel'
-                                      }">
-                                      {{ field.Label }}
+                                        [ngClass]="{
+                                            'btn-primary': field.Label !== 'Cancel', 
+                                            'btn-secondary': field.Label === 'Cancel'
+                                        }">
+                                        {{ field.Label }}
                                     </button>
-                                  </ng-container>
+                                    </ng-container>
                                 </ng-container>
-                              </ng-container>
+                            </ng-container>
                         </div>
                     </form>
                 </td>
-              </tr>
+            </tr>
         </tbody>
     </table>
 </div>
+
