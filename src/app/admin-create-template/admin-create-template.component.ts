@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AdminCreateTemplateComponent {
 
   sideNavStatus: boolean = false;
+  planName: string = '';
 
   rows = [
     { title: '', type: 'Textbox' }
@@ -23,7 +24,12 @@ export class AdminCreateTemplateComponent {
   }
 
   saveData() {
-    const jsonData = JSON.stringify(this.rows, null, 2);
+    const outputData = {
+      planName: this.planName,
+      fields: this.rows
+    };
+    
+    const jsonData = JSON.stringify(outputData, null, 2);
     
     // Create a blob of the data
     const blob = new Blob([jsonData], { type: 'application/json' });
@@ -32,7 +38,8 @@ export class AdminCreateTemplateComponent {
     // Create a link element, click it, and then destroy it
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'data.json';
+    const fileName = this.planName.trim() || 'data';
+    a.download = `${fileName}.json`;
     a.click();
     window.URL.revokeObjectURL(url);
   }
