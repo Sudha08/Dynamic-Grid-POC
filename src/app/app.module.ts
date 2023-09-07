@@ -11,6 +11,8 @@ import { AddressComponent } from './address/address.component';
 import { RspCompComponent } from './rsp-comp/rsp-comp.component';
 import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { AdminCreatePlanComponent } from './admin-create-plan/admin-create-plan.component';
+import { AdminCreateTemplateComponent } from './admin-create-template/admin-create-template.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     AddressComponent,
     RspCompComponent,
     HeaderComponent,
-    SideNavComponent
+    SideNavComponent,
+    AdminCreatePlanComponent,
+    AdminCreateTemplateComponent
   ],
   imports: [
     BrowserModule,
