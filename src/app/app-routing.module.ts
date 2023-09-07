@@ -6,10 +6,10 @@ import { RspCompComponent } from './rsp-comp/rsp-comp.component';
 
 
 const routes: Routes = [
-  { path: 'person', component: PersonComponent },
-  { path: 'address', component: AddressComponent },
-  { path: 'rsp', component: RspCompComponent },
-  { path: '', redirectTo: '/person', pathMatch: 'full' } // default route
+  { path: 'plan2', component: PersonComponent },
+  { path: 'plan3', component: AddressComponent },
+  { path: 'plan1', component: RspCompComponent },
+  { path: '', redirectTo: '/plan1', pathMatch: 'full' } // default route
 ];
 
 @NgModule({

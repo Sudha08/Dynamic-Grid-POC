@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { RspService } from '../services/rsp.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { RspService } from '../services/rsp.service';
 export class RspCompComponent implements OnInit {
 
   rspData: any;
+  sideNavStatus: boolean = false;
 
     constructor(private rspService: RspService) {}
 

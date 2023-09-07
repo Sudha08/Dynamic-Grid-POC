@@ -9,6 +9,7 @@ import { AddressService } from '../services/address.service';
 export class AddressComponent implements OnInit {
 
   addressData: any;
+  sideNavStatus: boolean = false;
 
   constructor(private addressService: AddressService) {}
 

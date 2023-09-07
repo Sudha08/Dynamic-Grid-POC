@@ -1,13 +1,14 @@
 {
     "columns": 3,
     "rows": 4,
+    "title": "Plan 3",
     "fields": [
       {
-        "Label": "Name",
+        "Label": "Field 1",
         "type": "textbox"
       },
       {
-        "Label": "Gender",
+        "Label": "Field 2",
         "type": "dropdown"
       },
       {
@@ -15,31 +16,31 @@
         "type": "radiobutton"
       },
       {
-        "Label": "Name1",
+        "Label": "Field 3",
         "type": "textbox"
       },
       {
-        "Label": "Gender1",
+        "Label": "Field 4",
         "type": "dropdown"
       },
       {
-        "Label": "XYZ2",
+        "Label": "Field 5",
         "type": "radiobutton"
       },
       {
-        "Label": "Name2",
+        "Label": "Field 6",
         "type": "textbox"
       },
       {
-        "Label": "Gender2",
+        "Label": "Field 7",
         "type": "dropdown"
       },
       {
-        "Label": "XYZ4",
+        "Label": "Field 8",
         "type": "radiobutton"
       },
       {
-        "Label": "Name3",
+        "Label": "Field 9",
         "type": "textbox"
       },
       {

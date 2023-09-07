@@ -1,6 +1,7 @@
 {
     "columns": 3,
     "rows": 10,
+    "title": "Plan 1",
     "fields": [
       {
         "Label": "Field 1",
@@ -8,7 +9,8 @@
       },
       {
         "Label": "Field 2",
-        "type": "dropdown"
+        "type": "dropdown",
+        "items": ["Item 1", "Item 2"]
       },
       {
         "Label": "Field 3",

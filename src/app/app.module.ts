@@ -9,6 +9,8 @@ import { DynamicTableComponent } from './dynamic-table/dynamic-table.component';
 import { PersonComponent } from './person/person.component';
 import { AddressComponent } from './address/address.component';
 import { RspCompComponent } from './rsp-comp/rsp-comp.component';
+import { HeaderComponent } from './header/header.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { RspCompComponent } from './rsp-comp/rsp-comp.component';
     DynamicTableComponent,
     PersonComponent,
     AddressComponent,
-    RspCompComponent
+    RspCompComponent,
+    HeaderComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,

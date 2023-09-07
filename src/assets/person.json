@@ -1,29 +1,30 @@
 {
     "columns": 4,
     "rows": 3,
+    "title": "Plan 2",
     "fields": [
       {
-        "Label": "Name",
+        "Label": "Field 1",
         "type": "textbox"
       },
       {
-        "Label": "Gender",
+        "Label": "Field 2",
         "type": "dropdown"
       },
       {
-        "Label": "XYZ",
+        "Label": "Field 3",
         "type": "radiobutton"
       },
       {
-        "Label": "XYZ1",
+        "Label": "Field 4",
         "type": "checkbox"
       },
       {
-        "Label": "Name1",
+        "Label": "Field 5",
         "type": "textbox"
       },
       {
-        "Label": "Gender1",
+        "Label": "Field 6",
         "type": "dropdown"
       },
       {
@@ -35,11 +36,11 @@
         "type": "checkbox"
       },
       {
-        "Label": "Name2",
+        "Label": "Field 7",
         "type": "textbox"
       },
       {
-        "Label": "Gender2",
+        "Label": "Field 8",
         "type": "dropdown"
       },
       {

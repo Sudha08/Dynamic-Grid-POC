@@ -9,6 +9,7 @@ import { PersonService } from '../services/person.service';
 export class PersonComponent implements OnInit {
 
   personData: any;
+  sideNavStatus: boolean = false;
 
     constructor(private personService: PersonService) {}
 
